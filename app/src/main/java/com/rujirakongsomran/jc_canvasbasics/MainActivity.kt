@@ -75,6 +75,12 @@ fun MyCanvas() {
             topLeft = Offset(500f, 100f),
             size = Size(200f, 300f)
         )
+        drawLine(
+            color = Color.Cyan,
+            start = Offset(300f, 700f),
+            end = Offset(700f, 700f),
+            strokeWidth = 5.dp.toPx()
+        )
     }
 }
 
