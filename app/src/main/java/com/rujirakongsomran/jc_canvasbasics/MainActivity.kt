@@ -14,6 +14,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Brush
@@ -80,6 +81,23 @@ fun MyCanvas() {
             start = Offset(300f, 700f),
             end = Offset(700f, 700f),
             strokeWidth = 5.dp.toPx()
+        )
+
+        drawRoundRect(
+            color = Color.Blue,
+            size = Size(
+                width = 100.dp.toPx(),
+                height = 30.dp.toPx()
+            ),
+            topLeft = Offset(
+                x = 5.dp.toPx(),
+                y = 100.dp.toPx()
+            ),
+            style = Stroke(width = 2.dp.toPx()),
+            cornerRadius = CornerRadius(
+                x = 20.dp.toPx(),
+                y = 20.dp.toPx()
+            )
         )
     }
 }
