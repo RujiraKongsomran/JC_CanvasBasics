@@ -59,6 +59,14 @@ fun MyCanvas() {
             ),
             radius = 100f,
         )
+        drawArc(
+            color = Color.Green,
+            startAngle = 0f,
+            sweepAngle = 270f,
+            useCenter = false,
+            topLeft = Offset(100f, 500f),
+            size = Size(200f, 200f)
+        )
     }
 }
 
