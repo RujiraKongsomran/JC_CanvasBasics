@@ -65,7 +65,10 @@ fun MyCanvas() {
             sweepAngle = 270f,
             useCenter = false,
             topLeft = Offset(100f, 500f),
-            size = Size(200f, 200f)
+            size = Size(200f, 200f),
+            style = Stroke(
+                width = 3.dp.toPx()
+            )
         )
     }
 }
